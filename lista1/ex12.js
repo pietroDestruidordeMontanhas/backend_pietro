@@ -1,4 +1,5 @@
 const input = require('readline-sync')
+
 let s = Number(input.question())
 let o = Number(input.question())
 
