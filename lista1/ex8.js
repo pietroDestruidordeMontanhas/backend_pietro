@@ -1,4 +1,4 @@
-const input = require('readline-sync');
+const input = require('readline-sync')
 let tabuleiro = ""
 let tamanho = Number(input.question("Digite o tamanho do tabuleiro:"));
 for (let linha = 0; linha < tamanho; linha++) {
