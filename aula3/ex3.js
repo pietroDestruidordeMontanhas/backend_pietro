@@ -16,7 +16,7 @@ for(let i = 0; i < produtos.length; i++){
     console.log(produtos[i])
 }
 
-produtos.push({id: 5, nome: "coxinha sem massa gigante com catupiri", preço: 450})
+produtos.push({id: 5, nome: "coxinha sem massa gigante com catupiri", preço: 49.99})
 
 console.log("")
 console.log(".               NOVO CARDAPIO COM TAMANHO", produtos.length,"         .")
@@ -31,10 +31,16 @@ console.log("")
 console.log("---------------------------------------------------------------------------")
 console.log("")
 
-console.log(produtos.find(p => p.id === 3))
 
+const encontrar = produtos.find(p => p.id === 3);
 
-
-(produtos.filter(p => p.preço > 50)){
-    console.log(produtos[`$nome`])
+if (encontrar) {
+  console.log("Produto encontrado:", encontrar.nome);
 }
+
+const Caros = produtos.filter(p => p.preço > 50);
+
+Caros.forEach(p => {
+  console.log(p.nome, p.preço, "Reais")
+}
+)
