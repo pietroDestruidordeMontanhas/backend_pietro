@@ -31,4 +31,10 @@ console.log("")
 console.log("---------------------------------------------------------------------------")
 console.log("")
 
+console.log(produtos.find(p => p.id === 3))
 
+
+
+(produtos.filter(p => p.preço > 50)){
+    console.log(produtos[`$nome`])
+}
