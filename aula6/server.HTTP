@@ -1,0 +1,29 @@
+### Buscar todos os ingredientes
+GET http://localhost:3000/ingrediente
+
+### Buscar o ingrediente com ID 1
+GET http://localhost:3000/ingrediente/1
+
+### Buscar um ingrediente que não existe (gera erro 404)
+GET http://localhost:3000/ingrediente/99
+
+### Criar um novo ingrediente (Corrigido: "ingrediente")
+POST http://localhost:3000/ingrediente
+Content-Type: application/json
+
+{
+  "ingrediente": "Catupiry",
+  "preço": 40.00
+}
+
+### Atualizar o ingrediente de id 1
+PUT http://localhost:3000/ingrediente/1
+Content-Type: application/json
+
+{
+  "ingrediente": "massa",
+  "preço": 35.00
+}
+
+### Remover o aluno de id 2
+DELETE http://localhost:3000/ingrediente/2
